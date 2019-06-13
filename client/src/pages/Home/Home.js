@@ -7,6 +7,8 @@ import { Box1 } from "../../components/Boxes/Boxes";
 import { Box2 } from "../../components/Boxes/Boxes";
 import { Box3 } from "../../components/Boxes/Boxes";
 import Metronome from "../../components/Metronome";
+import TopNav from "../../components/TopNav";
+import TopNav2 from "../../components/TopNav2"
 
 
 const powerStyle = {
@@ -73,9 +75,17 @@ class Home extends Component {
 
   render() {
     return (
+      
       <div id="drum-machine" className="App">
+      
+      
         <div className="dashboard-container" style={this.getTextStyle()}>
-          
+        
+          <div id="auth-nav">
+            <TopNav2 />
+          </div>
+        
+      
           <div id="power-wrapper">
             
             <input
@@ -88,8 +98,11 @@ class Home extends Component {
               <i className="fas fa-power-off fa-2x" />
             </label>
           </div>
-
-          <h1>Drum Machine</h1>
+            
+          <div id="h1-drum-machine">
+            <h1>Drum Machine</h1>
+          </div>
+          
 
           <div id="display" className="control-container">
 
@@ -127,7 +140,7 @@ class Home extends Component {
                     ...this.getBorderStyle()
                   }}
                 >
-                  Drums #1
+                  Drums & Chords #1
                 </button>
                 <button
                   className={
@@ -137,9 +150,9 @@ class Home extends Component {
                   onClick={this.toggleBox}
                   style={{ ...this.getTextStyle(), ...this.getBorderStyle() }}
                 >
-                  Drums #2
+                  Drums & Chords #2
                 </button>
-                <button
+                {/* <button
                   className={
                     "box" + (this.state.box === Box3 ? " activeBox" : "")
                   }
@@ -158,7 +171,7 @@ class Home extends Component {
                   style={{ ...this.getTextStyle(), ...this.getBorderStyle() }}
                 >
                   Drums #4
-                </button>
+                </button> */}
               </div>
             </div>
           </div>  

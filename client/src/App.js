@@ -13,8 +13,8 @@ function App() {
   return (
       <Router>
         <div>
-          <TopNav />
-          <Container>
+          {/* <TopNav /> */}
+          
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/signup" render={(props) => <Auth {...props} action="signup" />} />
@@ -22,7 +22,7 @@ function App() {
               <Route exact path="/profile" component={Profile} />
               <Route component={NoMatch} />
             </Switch>
-          </Container>
+         
           
         </div>
       </Router>

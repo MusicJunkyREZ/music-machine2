@@ -7,6 +7,9 @@
     margin-left: 17.5%;
     margin-right: 17.5%;
     border-radius: 20px;
+    float: right;
+    position: relative;
+    z-index: 20;
 
     a.titleFont {
         font-family: $title-font;

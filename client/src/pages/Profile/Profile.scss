@@ -3,6 +3,8 @@
 .profilePage {
     margin: 0 auto;
     margin-top: 25px;
+    background: black;
+    color: #65C850;
 
     .noUser {
         width: 280px;
@@ -31,8 +33,13 @@
     }
 
     .profileBox {
+        text-align: center;
         #userTitle {
             text-align: center
         }
+    }
+
+    p{
+        text-align: center;
     }
 }

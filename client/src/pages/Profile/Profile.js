@@ -42,13 +42,15 @@ class Profile extends Component {
             <div className="profilePage">
                 {this.state.loggedIn ? (
                     <div className="profileBox">
-                        <h1 id="userTitle">Welcome {this.state.user.username}</h1>
+                        <h1 id="userTitle">Welcome, {this.state.user.username}!</h1>
+                        <p>We will be building this out for you to customize in the future!</p>
+                        <Link to="/">Go back to the music!</Link>
                     </div>
                 ) : (
                     <div className="noUser">
                         {!this.state.loading ? (
                             <>
-                                <h1>please log in</h1>
+                                <h1>Please log in.</h1>
                                 <Link className="loginLink" to="/login"><Button className="loginBtn" color="info" block>Login</Button></Link>
                             </>
                         ) : (

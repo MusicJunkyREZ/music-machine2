@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./TopNav.scss";
+import "./TopNav2.scss";
 import API from "../../utils/API";
 import {
     Collapse,
@@ -65,7 +65,7 @@ export default class Navigation extends Component {
                             </NavItem>
                             <UncontrolledDropdown nav inNavbar>
                                 <DropdownToggle nav caret>
-                                    <i className="fas fa-user light-text"></i>
+                                <i className="fas fa-user light-text"></i>
                                 </DropdownToggle>
                                 <DropdownMenu right>
                                     {this.state.loggedIn ? (

@@ -6,6 +6,7 @@ const auth = {
         if(req.isAuthenticated()){
             console.log('user authenticated');
             next();
+            
         } else{
             console.log("user not authenticated");
             res.redirect('/api/users/unauthorized')

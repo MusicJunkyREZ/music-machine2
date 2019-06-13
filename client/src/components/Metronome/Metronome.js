@@ -119,14 +119,14 @@ class Metronome extends Component {
                     {playing ? "Stop Metronome" : "Start Metronome"}
                 </button>
                 {"      "}
-                <select id="desired-number">
+                {/* <select id="desired-number">
                     <option id= "1">1</option>
                     <option id= "2">2</option>
                     <option id= "3">3</option>
                     <option id= "4">4</option>
                     <option id= "5">5</option>
                     <option id= "6">6</option>
-                </select>
+                </select> */}
             </div>
         );   
     }
